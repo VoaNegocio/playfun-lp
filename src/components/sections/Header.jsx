@@ -1,0 +1,42 @@
+import React from 'react';
+import { MessageCircle } from 'lucide-react';
+
+const Header = () => {
+    return (
+        <section className="relative w-full min-h-[90vh] flex flex-col items-center justify-center bg-brand-offwhite px-4 py-12 md:py-24 overflow-hidden">
+            <div className="container mx-auto max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+                {/* Text Content */}
+                <div className="flex flex-col gap-6 text-center md:text-left z-10 order-2 md:order-1">
+                    <h1 className="font-serif text-4xl md:text-6xl text-brand-text font-bold leading-tight drop-shadow-sm">
+                        Infláveis brancos e recreação organizada para eventos elegantes
+                    </h1>
+                    <p className="font-sans text-lg md:text-xl text-stone-600 font-light max-w-xl mx-auto md:mx-0">
+                        Crianças seguras, pais tranquilos e convidados aproveitando até o fim — com total respeito à estética do seu evento.
+                    </p>
+                    <div className="pt-4 flex justify-center md:justify-start">
+                        <a
+                            href="https://wa.me/5500000000000" // Placeholder for WhatsApp
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 bg-white text-brand-text px-8 py-4 rounded-full border border-brand-gold shadow-sm hover:shadow-md hover:bg-yellow-50 transition-all duration-300 font-medium"
+                        >
+                            <MessageCircle size={20} className="text-brand-gold" />
+                            Falar com a PlayFun no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                {/* Image Content */}
+                <div className="relative w-full h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl order-1 md:order-2">
+                    {/* Placeholder for real image: Infláveis brancos */}
+                    <div className="absolute inset-0 bg-stone-200 flex items-center justify-center text-stone-400 font-serif italic text-2xl">
+                        Foto Real: Inflável Branco
+                    </div>
+                    {/* <img src="/path/to/image.jpg" alt="Inflável branco em casamento" className="w-full h-full object-cover" /> */}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Header;
