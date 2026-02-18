@@ -2,7 +2,7 @@ import React from 'react';
 
 const Solution = () => {
     return (
-        <section className="w-full py-24 bg-white px-4">
+        <section className="w-full py-24 bg-brand-green/20 px-4">
             <div className="container mx-auto max-w-4xl">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Visual element or just text structure as per briefing */}
@@ -12,7 +12,7 @@ const Solution = () => {
 
                     <div className="flex flex-col gap-8 order-1 md:order-2">
                         <div className="flex flex-col gap-4">
-                            <span className="font-sans text-brand-gold font-medium tracking-widest uppercase text-sm">A Solução</span>
+                            <span className="font-sans text-brand-peach font-bold tracking-widest uppercase text-sm">A Solução</span>
                             <h2 className="font-serif text-3xl md:text-4xl text-brand-text">
                                 Elegância não precisa excluir as crianças.
                             </h2>
@@ -24,24 +24,24 @@ const Solution = () => {
 
                         <ul className="space-y-4 font-sans text-stone-700">
                             <li className="flex gap-4">
-                                <span className="w-1.5 h-1.5 rounded-full bg-brand-gold mt-2.5 flex-shrink-0"></span>
+                                <span className="w-2 h-2 rounded-full bg-brand-blue mt-2.5 flex-shrink-0"></span>
                                 Infláveis brancos que valorizam fotos e cenários
                             </li>
                             <li className="flex gap-4">
-                                <span className="w-1.5 h-1.5 rounded-full bg-brand-gold mt-2.5 flex-shrink-0"></span>
+                                <span className="w-2 h-2 rounded-full bg-brand-peach mt-2.5 flex-shrink-0"></span>
                                 Recreação organizada, sem interferir no cerimonial
                             </li>
                             <li className="flex gap-4">
-                                <span className="w-1.5 h-1.5 rounded-full bg-brand-gold mt-2.5 flex-shrink-0"></span>
+                                <span className="w-2 h-2 rounded-full bg-brand-green mt-2.5 flex-shrink-0"></span>
                                 Oficinas criativas, silenciosas e visualmente neutras
                             </li>
                             <li className="flex gap-4">
-                                <span className="w-1.5 h-1.5 rounded-full bg-brand-gold mt-2.5 flex-shrink-0"></span>
+                                <span className="w-2 h-2 rounded-full bg-brand-pink mt-2.5 flex-shrink-0"></span>
                                 Equipe selecionada para cuidar — não apenas entreter
                             </li>
                         </ul>
 
-                        <div className="p-6 bg-brand-offwhite border-l-4 border-brand-gold rounded-r-lg">
+                        <div className="p-6 bg-brand-blue/10 border-l-4 border-brand-blue rounded-r-lg">
                             <p className="font-serif text-xl text-brand-text italic">
                                 "Tudo é pensado para integrar, nunca competir, com a beleza do seu casamento."
                             </p>

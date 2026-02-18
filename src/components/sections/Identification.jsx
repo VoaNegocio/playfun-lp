@@ -18,7 +18,7 @@ const Identification = () => {
                                 "Quer tranquilidade — não improviso"
                             ].map((item, index) => (
                                 <li key={index} className="flex items-start gap-3">
-                                    <span className="mt-1 round-full p-0.5 border border-brand-check text-brand-check rounded-full">
+                                    <span className="mt-1 round-full p-0.5 bg-brand-green/20 text-teal-700 rounded-full">
                                         <Check size={14} />
                                     </span>
                                     <span className="font-sans text-stone-700 font-light">{item}</span>

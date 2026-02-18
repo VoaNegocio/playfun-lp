@@ -2,7 +2,7 @@ import React from 'react';
 
 const Problem = () => {
     return (
-        <section className="w-full py-24 bg-brand-offwhite px-4">
+        <section className="w-full py-24 bg-brand-pink/30 px-4">
             <div className="container mx-auto max-w-3xl text-center flex flex-col gap-8">
                 <h2 className="font-serif text-3xl md:text-4xl text-brand-text leading-tight">
                     O problema não é ter crianças no casamento.<br />

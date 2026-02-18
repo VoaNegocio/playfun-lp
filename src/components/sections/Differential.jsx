@@ -2,7 +2,7 @@ import React from 'react';
 
 const Differential = () => {
     return (
-        <section className="w-full py-20 bg-brand-offwhite px-4">
+        <section className="w-full py-20 bg-brand-blue/20 px-4">
             <div className="container mx-auto max-w-4xl text-center">
                 <h2 className="font-serif text-3xl md:text-4xl text-brand-text mb-8">
                     A PlayFun não trabalha com recreação genérica.

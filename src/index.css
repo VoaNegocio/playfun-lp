@@ -1,11 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-offwhite: #fdfbf7;
-  --color-brand-gold: #d4af37;
+  --color-brand-blue: #b9d7eb;
+  --color-brand-peach: #f4a87b;
+  --color-brand-green: #a9d8d2;
+  --color-brand-pink: #f8d0e2;
+
   --color-brand-text: #1c1917;
-  --color-brand-check: #a8a29e;
-  
+  --color-brand-offwhite: #fdfbf7;
+  /* Mantendo um neutro bem claro para fundos gerais se precisar */
+
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
 }
@@ -17,8 +21,13 @@
     background-color: var(--color-brand-offwhite);
     scroll-behavior: smooth;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-serif);
   }
 }
