@@ -33,11 +33,11 @@ const Header = () => {
 
                 {/* Image Content */}
                 <div className="relative w-full h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl order-1 md:order-2">
-                    {/* Placeholder for real image: Infláveis brancos */}
-                    <div className="absolute inset-0 bg-stone-200 flex items-center justify-center text-stone-400 font-serif italic text-2xl">
-                        Foto Real: Inflável Branco
-                    </div>
-                    {/* <img src="/path/to/image.jpg" alt="Inflável branco em casamento" className="w-full h-full object-cover" /> */}
+                    <img
+                        src="/assets/imgs/imghero.jpg"
+                        alt="Inflável branco em evento elegante"
+                        className="w-full h-full object-cover"
+                    />
                 </div>
             </div>
         </section>

@@ -1,13 +1,106 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const CARD_OFFSET = 25;
+const SCALE_FACTOR = 0.06;
+
+const cardData = [
+    { id: 1, src: "/assets/imgs/imgcard.jpg", alt: "Inflável branco e elegante" },
+    { id: 2, src: "/assets/imgs/imghero.jpg", alt: "Evento com recreação PlayFun" },
+    { id: 3, src: "/assets/imgs/imgcard.jpg", alt: "Diversão sem poluição visual" },
+    { id: 4, src: "/assets/imgs/imghero.jpg", alt: "Momentos inesquecíveis" },
+];
+
+const Card = ({ card, index, moveCard }) => {
+    return (
+        <motion.div
+            layout
+            className="absolute w-full h-full rounded-2xl overflow-hidden shadow-2xl cursor-grab active:cursor-grabbing bg-white border-4 border-white"
+            style={{
+                transformOrigin: 'top center',
+            }}
+            initial={{
+                scale: 1 - index * SCALE_FACTOR,
+                top: index * CARD_OFFSET,
+                opacity: 0,
+                zIndex: 0
+            }}
+            animate={{
+                scale: 1 - index * SCALE_FACTOR,
+                top: index * CARD_OFFSET,
+                opacity: index > 2 ? 0 : 1,
+                zIndex: 100 - index,
+                rotate: 0,
+                x: 0
+            }}
+            exit={{
+                x: index === 0 ? -300 : 0,
+                opacity: 0,
+                scale: 1,
+                rotate: -20,
+                zIndex: 101, // Ensure it stays on top while exiting
+                transition: { duration: 0.4 }
+            }}
+            transition={{
+                duration: 0.5,
+                ease: [0.32, 0.72, 0, 1]
+            }}
+            drag={index === 0 ? "x" : false}
+            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            onDragEnd={(event, info) => {
+                if (index === 0 && (Math.abs(info.offset.x) > 100)) {
+                    moveCard();
+                }
+            }}
+            onClick={() => {
+                if (index === 0) moveCard();
+            }}
+        >
+            <img
+                src={card.src}
+                alt={card.alt}
+                className="w-full h-full object-cover pointer-events-none"
+            />
+            <div className="absolute inset-0 bg-black/10" style={{ opacity: index * 0.15 }} />
+        </motion.div>
+    );
+};
 
 const Solution = () => {
+    // Initialize cards with a unique key property constructed from ID + version
+    const [cards, setCards] = useState(cardData.map(c => ({ ...c, uniqueId: `${c.id}-0` })));
+
+    const moveCard = () => {
+        setCards((prevCards) => {
+            const newCards = [...prevCards];
+            const topCard = newCards.shift();
+            // Create a new version of the card so it enters as a "fresh" element
+            const version = parseInt(topCard.uniqueId.split('-')[1]) + 1;
+            const recycledCard = { ...topCard, uniqueId: `${topCard.id}-${version}` };
+            newCards.push(recycledCard);
+            return newCards;
+        });
+    };
+
     return (
         <section className="w-full py-24 bg-brand-green/20 px-4">
             <div className="container mx-auto max-w-4xl">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Visual element or just text structure as per briefing */}
-                    <div className="order-2 md:order-1 relative h-[500px] bg-stone-100 rounded-lg flex items-center justify-center italic text-stone-400 font-serif p-8 text-center">
-                        Foto: Crianças brincando em inflável branco harmonizado com a festa
+                    {/* Stacked Card Carousel */}
+                    <div className="order-2 md:order-1 relative w-full h-[500px] flex items-center justify-center perspective-1000">
+                        <AnimatePresence>
+                            {cards.map((card, index) => {
+                                return (
+                                    <Card
+                                        key={card.uniqueId}
+                                        card={card}
+                                        index={index}
+                                        moveCard={moveCard}
+                                    />
+                                );
+                            })}
+                        </AnimatePresence>
                     </div>
 
                     <div className="flex flex-col gap-8 order-1 md:order-2">
