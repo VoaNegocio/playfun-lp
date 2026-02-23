@@ -25,7 +25,7 @@ const FinalCTA = () => {
 
                 <div className="pt-2">
                     <a
-                        href="https://wa.me/5500000000000"
+                        href="https://wa.me/5516991600050?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group relative inline-flex items-center gap-3 px-10 py-5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 font-sans text-xl font-semibold tracking-wide overflow-hidden animate-pulse-glow"

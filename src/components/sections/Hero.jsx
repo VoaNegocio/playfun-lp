@@ -48,7 +48,7 @@ const Hero = () => {
                         className="order-4 md:order-none pt-4 flex justify-center md:justify-start relative z-10 w-full md:w-auto"
                     >
                         <a
-                            href="https://wa.me/5500000000000"
+                            href="https://wa.me/5516991600050?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative inline-flex items-center gap-2 px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 font-semibold w-full md:w-auto justify-center overflow-hidden animate-pulse-glow"
@@ -68,7 +68,7 @@ const Hero = () => {
                     className="order-2 md:order-none relative w-full h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl ring-2 ring-white/30"
                 >
                     <img
-                        src="/assets/imgs/imghero.jpg"
+                        src="/assets/imgs/imghero.webp"
                         alt="Inflável branco em evento elegante"
                         className="w-full h-full object-cover"
                     />

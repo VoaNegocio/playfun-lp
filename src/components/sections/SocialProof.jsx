@@ -74,7 +74,7 @@ const SocialProof = () => {
                         {/* Video */}
                         <div className="relative rounded-xl overflow-hidden shadow-inner">
                             <video
-                                src="/assets/videos/video-playfun-crianca-min.mp4"
+                                src="/assets/videos/video-playfun-crianca.mp4"
                                 controls
                                 playsInline
                                 className="w-full h-auto rounded-xl"

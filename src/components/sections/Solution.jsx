@@ -7,11 +7,11 @@ const SCALE_FACTOR = 0.05;
 const AUTO_PLAY_INTERVAL = 4000;
 
 const cardData = [
-    { id: 1, src: "/assets/imgs/imgcard.jpg", alt: "Inflável branco e elegante" },
-    { id: 2, src: "/assets/imgs/imghero.jpg", alt: "Evento com recreação PlayFun" },
-    { id: 3, src: "/assets/imgs/imgbrinquedo-playfun.jpg", alt: "Brinquedo PlayFun para eventos" },
-    { id: 4, src: "/assets/imgs/imgmesa-playfun.jpg", alt: "Mesa decorada PlayFun" },
-    { id: 5, src: "/assets/imgs/imgbrinquedoecrianca-playfun.jpg", alt: "Criança brincando no evento" },
+    { id: 1, src: "/assets/imgs/imgcard.webp", alt: "Inflável branco e elegante" },
+    { id: 2, src: "/assets/imgs/imghero.webp", alt: "Evento com recreação PlayFun" },
+    { id: 3, src: "/assets/imgs/imgbrinquedo-playfun.webp", alt: "Brinquedo PlayFun para eventos" },
+    { id: 4, src: "/assets/imgs/imgmesa-playfun.webp", alt: "Mesa decorada PlayFun" },
+    { id: 5, src: "/assets/imgs/imgbrinquedoecrianca-playfun.webp", alt: "Criança brincando no evento" },
 ];
 
 const Card = ({ card, index, moveCard }) => {

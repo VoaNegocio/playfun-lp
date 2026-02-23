@@ -30,7 +30,7 @@ const Header = ({ children }) => {
                 <div className="container mx-auto max-w-6xl flex items-center justify-between">
                     <a href="#hero" className="flex-shrink-0">
                         <img
-                            src="/assets/logo/logo-playfun.jpg"
+                            src="/assets/logo/logo-playfun.webp"
                             alt="PlayFun Logo"
                             className={`w-auto mix-blend-multiply transition-all duration-300 ${scrolled ? 'h-10' : 'h-12 md:h-16'}`}
                         />
@@ -49,7 +49,7 @@ const Header = ({ children }) => {
                             </a>
                         ))}
                         <a
-                            href="https://wa.me/5500000000000"
+                            href="https://wa.me/5516991600050?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
@@ -85,7 +85,7 @@ const Header = ({ children }) => {
                         </a>
                     ))}
                     <a
-                        href="https://wa.me/5500000000000"
+                        href="https://wa.me/5516991600050?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => setMenuOpen(false)}
