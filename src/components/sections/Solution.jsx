@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MessageCircle } from 'lucide-react';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 
 const CARD_OFFSET = 40;
@@ -167,6 +168,20 @@ const Solution = () => {
                             <p className="font-serif text-xl text-brand-text italic">
                                 "Tudo é pensado para integrar, nunca competir, com a beleza do seu casamento."
                             </p>
+                        </div>
+
+                        {/* CTA Button */}
+                        <div className="mt-8 flex justify-center md:justify-start">
+                            <a
+                                href="https://wa.me/5516991600050?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 font-sans text-lg font-semibold tracking-wide overflow-hidden animate-pulse-glow w-full md:w-auto justify-center"
+                                style={{ background: 'linear-gradient(135deg, #2D6A4F, #1B4332)', color: '#fff' }}
+                            >
+                                <MessageCircle size={22} className="group-hover:scale-110 transition-transform" />
+                                Falar com a PlayFun no WhatsApp
+                            </a>
                         </div>
                     </div>
                 </div>

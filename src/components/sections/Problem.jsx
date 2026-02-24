@@ -1,4 +1,5 @@
 import React from 'react';
+import { MessageCircle } from 'lucide-react';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 
 const problemItems = [
@@ -40,6 +41,20 @@ const Problem = () => {
                 <p className="font-serif text-2xl text-brand-text mt-8 italic">
                     A PlayFun existe para evitar exatamente isso.
                 </p>
+
+                {/* CTA Button */}
+                <div className={`mt-10 flex justify-center scroll-reveal ${isVisible ? 'visible' : ''}`} style={{ transitionDelay: '600ms' }}>
+                    <a
+                        href="https://wa.me/5516991600050?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 font-sans text-lg font-semibold tracking-wide overflow-hidden animate-pulse-glow"
+                        style={{ background: 'linear-gradient(135deg, #2D6A4F, #1B4332)', color: '#fff' }}
+                    >
+                        <MessageCircle size={22} className="group-hover:scale-110 transition-transform" />
+                        Falar com a PlayFun no WhatsApp
+                    </a>
+                </div>
             </div>
         </section>
     );
